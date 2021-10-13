@@ -6,7 +6,7 @@
 
 In this paper, we design a lightweight disparity estimation model with physical-based multi-disparity-scale cost volume aggregation for fast disparity estimation. By introducing a sub-network of edge guidance, we significantly improve the recovery of geometric details near edges and improve the overall performance. We significantly reduce computation cost and GPU memory consumption on both densely and sparsely sampled light fields.
 
-![](C:\Users\ASUS\Desktop\net.png)
+![](https://github.com/zcong17huang/FastLFnet/blob/main/configs/net.png)
 
 ## Requirement
 
