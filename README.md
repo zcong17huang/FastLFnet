@@ -40,13 +40,10 @@ If you find our code or paper helps, please consider citing:
 ## Relevant Works
 
 [LFattNet: Attention-based View Selection Networks for Light-field Disparity Estimation (AAAI 2020)](https://github.com/LIAGM/LFattNet)
-
 Yu-Ju Tsai, Yu-Lun Liu, Ming Ouhyoung, Yung-Yu Chuang
 
 [EPINET: A Fully-Convolutional Neural Network using Epipolar Geometry for Depth from Light Field Images (CVPR 2018)](https://github.com/chshin10/epinet)
-
 Changha Shin, Hae-Gon Jeon, Youngjin Yoon, In So Kweon, Seon Joo Kim
 
 [PSMNet: Pyramid Stereo Matching Network (CVPR 2018)](https://github.com/JiaRenChang/PSMNet)
-
 Jia-Ren Chang, Yong-Sheng Chen
