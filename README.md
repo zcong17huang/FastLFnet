@@ -147,7 +147,7 @@ Pretrained Model for 4D Light Field Dataset [Google Drive](https://drive.google.
 
 ## Benchmark submission Results
 
-The submission Results for [4D Light Field Dataset](https://lightfield-analysis.uni-konstanz.de/benchmark/table?column-type=images&metric=mse_100) benchmark are stored in the **subResults** folder
+The submission Results for [4D Light Field Dataset](https://lightfield-analysis.uni-konstanz.de/benchmark/table?column-type=images&metric=mse_100) benchmark are stored in the **[subResults](https://github.com/zcong17huang/FastLFnet/tree/main/subResults/hci)** folder
 
 ## Results
 
