@@ -54,7 +54,7 @@ As mentioned in the paper, we use a three-step training strategy to train the ne
 
 First, we train our FastLFnet without edge guidance to get coarse results.
 
-Go to the folder **Step1**, and use the following command to get coarse results and pretrained model.
+Go to the folder **[codeStep1](https://github.com/zcong17huang/FastLFnet/tree/main/codeStep1)**, and use the following command to get coarse results and pretrained model.
 
 ```
 python train.py --epochs 1000 \
@@ -81,7 +81,7 @@ python evaluation.py --datapath <your-dataset-folder> \
 
 Secondly, we combine the edge guidance sub-network with the feature extraction module to predict the edge information of the center view.
 
-Go to the folder **Step2**, and use the following command to train the edge guidance sub-network. *Here we need the pretrained model from Step1*.
+Go to the folder **[codeStep2](https://github.com/zcong17huang/FastLFnet/tree/main/codeStep2)**, and use the following command to train the edge guidance sub-network. *Here we need the pretrained model from Step1*.
 
 ```
 python train.py --train_batchsize 16 \
@@ -106,7 +106,7 @@ python evaluation.py --datapath <your-dataset-folder> \
 
 Finally, we train the whole FastLFnet jointly.
 
-Go to the folder **Step3**, and use the following command to train the whole network. *Here we need the pretrained model from Step1 and Step2*.
+Go to the folder **[codeStep3](https://github.com/zcong17huang/FastLFnet/tree/main/codeStep3)**, and use the following command to train the whole network. *Here we need the pretrained model from Step1 and Step2*.
 
 ```
 python train.py --epochs 1000 \
@@ -130,7 +130,7 @@ python evaluation.py --datapath <your-dataset-folder> \
                      --no_cuda (if for CPU evaluating)
 ```
 
-You can get submission results for the **benchmark** [4D Light Field Dataset]([4D Light Field Benchmark](https://lightfield-analysis.uni-konstanz.de/benchmark/table?column-type=images&metric=mse_100)) using the following command.
+You can get submission results for the **benchmark** [4D Light Field Dataset](https://lightfield-analysis.uni-konstanz.de/benchmark/table?column-type=images&metric=mse_100) using the following command.
 
 ```
 python submission512.py --datapath <your-dataset-folder> \
@@ -143,23 +143,25 @@ python submission512.py --datapath <your-dataset-folder> \
 
 ## Pretrained Model
 
-Pretrained Model for 4D Light Field Dataset [Google Drive]([pretrainedModelForFastLFnet.zip - Google 云端硬盘](https://drive.google.com/file/d/1X4CMv2tYt89uxAPtIY5kjl-5eVDMFfih/view?usp=sharing))
+Pretrained Model for 4D Light Field Dataset [Google Drive](https://drive.google.com/file/d/1X4CMv2tYt89uxAPtIY5kjl-5eVDMFfih/view?usp=sharing)
 
 ## Benchmark submission Results
 
-The submission Results for [4D Light Field Dataset]([4D Light Field Benchmark](https://lightfield-analysis.uni-konstanz.de/benchmark/table?column-type=images&metric=mse_100)) benchmark are stored in the **subResults** folder
+The submission Results for [4D Light Field Dataset](https://lightfield-analysis.uni-konstanz.de/benchmark/table?column-type=images&metric=mse_100) benchmark are stored in the **subResults** folder
 
 ## Results
 
-**Comparison in performance and efficiency.**
+- **Comparison in performance and efficiency.**
 
+<img src="https://github.com/zcong17huang/FastLFnet/blob/main/configs/table1.png" width="700" height="557" alt="table1"/><br/>
 
+- **Quantitative comparison on the 4D Light Field Dataset.**
 
-**Quantitative comparison on the 4D Light Field Dataset.**
+<img src="https://github.com/zcong17huang/FastLFnet/blob/main/configs/table2.png" width="800" height="442" alt="table2"/><br/>
 
+- **Qualitative results**
 
-
-**Qualitative results**
+![](https://github.com/zcong17huang/FastLFnet/blob/main/configs/fig.png)
 
 ## Relevant Works
 
