@@ -145,6 +145,10 @@ python submission512.py --datapath <your-dataset-folder> \
 
 Pretrained Model for 4D Light Field Dataset [Google Drive](https://drive.google.com/file/d/1X4CMv2tYt89uxAPtIY5kjl-5eVDMFfih/view?usp=sharing)
 
+## Edge Maps
+
+The [edge maps](https://github.com/zcong17huang/FastLFnet/tree/main/edgeMaps) have been uploaded. Each light field scene contains a corresponding edge map, and you can begin training after placing the edge map in the corresponding scene folder.
+
 ## Benchmark submission Results
 
 The submission Results for [4D Light Field Dataset](https://lightfield-analysis.uni-konstanz.de/benchmark/table?column-type=images&metric=mse_100) benchmark are stored in the **[subResults](https://github.com/zcong17huang/FastLFnet/tree/main/subResults/hci)** folder
